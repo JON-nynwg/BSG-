@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beyond Seizure Global — Our Mission.">
+    <title>Our Mission — Beyond Seizure Global</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/donate.css">
+</head>
+
+<body>
+
+<div id="brand">
+
+    <header id="header">
+        <div class="ly_inner">
+            <h1 class="logo">
+                <a href="index.html#home">
+                    <img src="images/bsg-logo.png" alt="Beyond Seizure Global">
+                    <span class="logo-text">Beyond Seizure Global</span>
+                </a>
+            </h1>
+            <ul class="siteUtil">
+                <li><a href="index.html#home" class="icon-link"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="index.html#footer" class="icon-link"><i class="fa-solid fa-envelope"></i>Contact Us</a></li>
+                <li><a href="index.html#footer" class="donate-btn">support bsg</a></li>
+                <li><a href="index.html#footer" class="donate-btn">Donate</a></li>
+            </ul>
+        </div>
+        <nav id="nav">
+            <div class="ly_inner">
+                <ul id="gnb">
+                    <li><a href="index.html#overview">Overview</a></li>
+                    <li><a href="index.html#founders">Founders</a></li>
+                    <li><a href="index.html#footer" class="donate-btn">Support</a></li>
+                    <li><a href="index.html#footer">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="page-hero">
+            <div class="section-heading">
+                <span class="eyebrow">WHY WE EXIST</span>
+                <h2>More than seizures.<br>A life beyond stigma.</h2>
+            </div>
+
+            <div class="impact-grid">
+                <article class="impact-item">
+                    <strong>Educate</strong>
+                    <p>Making reliable epilepsy and neurological health information accessible to communities.</p>
+                </article>
+                <article class="impact-item">
+                    <strong>Empower</strong>
+                    <p>Equipping people affected by epilepsy with knowledge, confidence and meaningful support.</p>
+                </article>
+                <article class="impact-item">
+                    <strong>End Stigma</strong>
+                    <p>Challenging misconceptions and creating communities where people can live without discrimination.</p>
+                </article>
+            </div>
+
+            <div class="ly_inner">
+                <a class="back-link" href="index.html#overview">&larr; Back to Overview</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="footer-marquee" aria-hidden="true">
+            <div class="footer-marquee__track">
+                <span>Educate</span><span class="dot">&bull;</span>
+                <span>Empower</span><span class="dot">&bull;</span>
+                <span>End Stigma</span><span class="dot">&bull;</span>
+                <span>Beyond Seizures</span><span class="dot">&bull;</span>
+                <span>Support Research</span><span class="dot">&bull;</span>
+                <span>Join The Movement</span><span class="dot">&bull;</span>
+                <span>Educate</span><span class="dot">&bull;</span>
+                <span>Empower</span><span class="dot">&bull;</span>
+                <span>End Stigma</span><span class="dot">&bull;</span>
+                <span>Beyond Seizures</span><span class="dot">&bull;</span>
+                <span>Support Research</span><span class="dot">&bull;</span>
+                <span>Join The Movement</span><span class="dot">&bull;</span>
+            </div>
+        </div>
+        <div class="address ly_inner">
+            <address class="adr">
+                <p class="copy">© 2026 Beyond Seizure Global. All rights reserved.</p>
+                Kenya / Global &nbsp; E-mail :
+                <a href="mailto:info@beyondseizureglobal.org">info@beyondseizureglobal.org</a>
+            </address>
+        </div>
+    </footer>
+
+</div>
+
+
+<!-- =========================
+     DONATE MODAL
+========================== -->
+<div class="donate-modal-overlay" id="donate-modal-overlay">
+  <div class="donate-modal">
+    <div class="donate-modal-header">
+      <h2>Support BSG</h2>
+      <button class="donate-modal-close" id="donate-modal-close">&times;</button>
+    </div>
+
+    <div class="donate-tabs">
+      <button class="donate-tab active" data-tab="mpesa">M-Pesa / Card</button>
+      <button class="donate-tab" data-tab="paypal">PayPal</button>
+      <button class="donate-tab" data-tab="crypto">Crypto</button>
+      <button class="donate-tab" data-tab="bank">Bank</button>
+    </div>
+
+    <!-- M-PESA + CARD via IntaSend -->
+    <div class="donate-panel active" id="donate-panel-mpesa">
+      <div class="donate-amount-row">
+        <button data-amount="500">KES 500</button>
+        <button data-amount="1000" class="selected">KES 1,000</button>
+        <button data-amount="2500">KES 2,500</button>
+      </div>
+      <input type="number" id="mpesa-custom-amount" placeholder="Or enter custom amount (KES)">
+      <button class="donate-pay-btn" id="intasend-pay-btn">Pay with M-Pesa / Card</button>
+      <p class="donate-note">Powered by IntaSend. You'll get an M-Pesa STK push prompt, or a secure card form.</p>
+    </div>
+
+    <!-- PAYPAL -->
+    <div class="donate-panel" id="donate-panel-paypal">
+      <p class="donate-note" style="margin-top:0;">For international donors.</p>
+      <div id="paypal-button-container"></div>
+    </div>
+
+    <!-- CRYPTO -->
+    <div class="donate-panel" id="donate-panel-crypto">
+      <p class="donate-note" style="margin-top:0;">Pay with BTC, USDT, ETH and more.</p>
+      <div id="crypto-widget-container"></div>
+    </div>
+
+    <!-- BANK -->
+    <div class="donate-panel" id="donate-panel-bank">
+      <div class="donate-bank-details">
+        <div><b>Bank</b> Your Bank Name</div>
+        <div><b>Account name</b> Beyond Seizure Global</div>
+        <div><b>Account no.</b> 0000000000</div>
+        <div><b>Branch</b> Branch Name</div>
+        <div><b>SWIFT</b> XXXXXXXX</div>
+      </div>
+      <p class="donate-note">Please use your name as the payment reference.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- IntaSend Inline Checkout SDK -->
+<script src="https://unpkg.com/intasend-inlinejs-sdk@4.0.4/build/intasend-inline.js"></script>
+
+<!-- PayPal Buttons SDK — replace YOUR_PAYPAL_CLIENT_ID -->
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+
+<script src="js/donate.js"></script>
+
+</body>
+</html>
