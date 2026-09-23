@@ -215,9 +215,9 @@ strong {
 
 #gnb > li > a {
     display: block;
-    font-size: 18px;
+    font-size: 15.5px;
     height: 54px;
-    padding: 15px 6px 0;
+    padding: 17px 4px 0;
     text-align: center;
     color: #fff;
     font-weight: 400;
@@ -1290,4 +1290,656 @@ a.resource-card:hover::after {
     50% {
         box-shadow: 0 0 0 2px rgba(109, 43, 217, 0.18), 0 0 16px rgba(109, 43, 217, 0.85);
     }
+}
+
+
+/* =========================================================
+   FOOTER — expanded multi-column (brand + link columns)
+   ========================================================= */
+
+.footer-main {
+    width: 1080px;
+    margin: 0 auto;
+    padding: 46px 0 22px;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1.1fr;
+    gap: 34px;
+    text-align: left;
+}
+
+.footer-brand .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-brand .footer-logo img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer-brand .footer-logo span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #241537;
+}
+
+.footer-brand p {
+    margin-top: 12px;
+    color: #777;
+    font-size: 13.5px;
+    line-height: 1.6;
+    max-width: 260px;
+}
+
+.footer-col h4 {
+    margin-bottom: 14px;
+    color: #6d2bd9;
+    font-size: 12.5px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #555;
+    font-size: 13.5px;
+}
+
+.footer-col ul li a:hover {
+    color: #6d2bd9;
+}
+
+.footer-col a.donate-link {
+    all: unset;
+    cursor: pointer;
+    color: #6d2bd9 !important;
+    font-weight: 700;
+    font-size: 13.5px;
+    animation: none;
+    box-shadow: none;
+    background: none;
+}
+
+.footer-col a.donate-link:hover {
+    color: #4e1ca5 !important;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #e2e2e2;
+}
+
+
+/* =========================================================
+   STATS BAND — global impact numbers (dark, full-bleed)
+   ========================================================= */
+
+.stats-band {
+    width: 100%;
+    background: linear-gradient(160deg, #150a24 0%, #2a1148 55%, #180b2b 100%);
+    padding: 60px 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-band::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 12% 20%, rgba(180,119,255,.18), transparent 45%),
+        radial-gradient(circle at 88% 80%, rgba(109,43,217,.22), transparent 50%);
+    pointer-events: none;
+}
+
+.stats-band .section-heading h2 {
+    color: #fff;
+    background: linear-gradient(100deg, #fff 60%, #d9b6ff 120%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stats-band .section-heading p { color: #cdbfe0; }
+.stats-band .section-heading .eyebrow { color: #b477ff; }
+
+.stats-grid {
+    position: relative;
+    z-index: 1;
+    width: 1080px;
+    margin: 10px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+}
+
+.stat-card {
+    padding: 26px 20px;
+    text-align: center;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 16px;
+}
+
+.stat-number {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+    background: linear-gradient(120deg, #fff, #d9b6ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-card p {
+    margin: 0;
+    color: #cdbfe0;
+    font-size: 13.5px;
+    line-height: 1.5;
+}
+
+.stats-source {
+    position: relative;
+    z-index: 1;
+    width: 1080px;
+    margin: 24px auto 0;
+    color: #9880b8;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* =========================================================
+   IMPACT CALLOUT — compact single-bar stat highlight
+   ========================================================= */
+
+.impact-callout {
+    width: 1080px;
+    margin: 34px auto 0;
+    padding: 28px 36px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #1d0d2d, #3a1766);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.impact-callout strong {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 28px;
+    color: #d9b6ff;
+    white-space: nowrap;
+}
+
+.impact-callout p {
+    margin: 0;
+    color: #e6dcf5;
+    font-size: 14px;
+    line-height: 1.6;
+    flex: 1;
+    min-width: 240px;
+}
+
+
+/* =========================================================
+   PILLARS — "Our Approach" numbered cards (Mission)
+   ========================================================= */
+
+.pillars-grid {
+    width: 1080px;
+    margin: 34px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pillar-card {
+    padding: 28px 22px;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eee2fb;
+    box-shadow: 0 10px 30px -20px rgba(75, 20, 150, .45);
+}
+
+.pillar-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6d2bd9, #b477ff);
+    color: #fff;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.pillar-card h3 {
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #222;
+}
+
+.pillar-card p {
+    margin: 0;
+    color: #666;
+    font-size: 13.5px;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   VALUES GRID (Mission)
+   ========================================================= */
+
+.values-grid {
+    width: 1080px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.value-card {
+    padding: 24px 18px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.value-card i {
+    display: block;
+    margin-bottom: 12px;
+    color: #6d2bd9;
+    font-size: 22px;
+}
+
+.value-card h4 {
+    margin-bottom: 6px;
+    color: #222;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.value-card p {
+    margin: 0;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   STORY TEASER (Mission -> Founders link)
+   ========================================================= */
+
+.story-teaser {
+    width: 860px;
+    margin: 0 auto;
+    padding: 36px 44px;
+    text-align: center;
+    background: #f7f3fb;
+    border: 1px solid #e6d9fb;
+    border-radius: 18px;
+}
+
+.story-teaser p {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MYTHS vs FACTS (Education)
+   ========================================================= */
+
+.myth-grid {
+    width: 1080px;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.myth-card {
+    padding: 22px 24px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid #eee;
+    box-shadow: 0 8px 22px -18px rgba(75, 20, 150, .4);
+}
+
+.myth-card .tag {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.myth-card .tag.myth { background: #ffe3e3; color: #c2261e; }
+.myth-card .tag.fact { background: #dcf5e6; color: #1c7d45; }
+
+.myth-card p {
+    margin: 0;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.myth-card p.myth-text {
+    margin-bottom: 10px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+
+/* =========================================================
+   NUMBERED STEP LIST (Seizure First Aid / How We Work)
+   ========================================================= */
+
+.steps-list {
+    width: 800px;
+    margin: 30px auto 0;
+    counter-reset: bsg-step;
+}
+
+.step-item {
+    position: relative;
+    margin-bottom: 14px;
+    padding: 18px 22px 18px 66px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px -16px rgba(75, 20, 150, .4);
+}
+
+.step-item::before {
+    counter-increment: bsg-step;
+    content: counter(bsg-step);
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6d2bd9, #b477ff);
+    color: #fff;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.step-item h4 {
+    margin-bottom: 4px;
+    color: #222;
+    font-size: 15.5px;
+    font-weight: 600;
+}
+
+.step-item p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.step-item.warn { border-left: 4px solid #e0463c; }
+.step-item.warn::before { background: linear-gradient(135deg, #e0463c, #ff8a7a); }
+
+
+/* =========================================================
+   FOUNDERS TEASER (Home page compact preview)
+   ========================================================= */
+
+.founders-teaser-grid {
+    width: 1080px;
+    margin: 10px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px;
+}
+
+.founder-mini {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px;
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #eee2fb;
+    box-shadow: 0 8px 22px -18px rgba(75, 20, 150, .4);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.founder-mini:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 34px -18px rgba(75, 20, 150, .55);
+}
+
+.founder-mini img {
+    flex: 0 0 72px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.founder-mini h4 {
+    margin-bottom: 2px;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.founder-mini span {
+    display: block;
+    color: #6d2bd9;
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: .3px;
+    text-transform: uppercase;
+}
+
+.founders-teaser-cta {
+    width: 1080px;
+    margin: 26px auto 0;
+    text-align: center;
+}
+
+
+/* =========================================================
+   RESEARCH PRIORITIES LIST (dark)
+   ========================================================= */
+
+.priority-list {
+    width: 1080px;
+    margin: 30px auto 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.priority-item {
+    display: flex;
+    gap: 14px;
+    padding: 22px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 12px;
+}
+
+.priority-item i { margin-top: 3px; color: #b477ff; font-size: 19px; }
+
+.priority-item h4 {
+    margin-bottom: 6px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.priority-item p {
+    margin: 0;
+    color: #ddd2e5;
+    font-size: 13.5px;
+    line-height: 1.55;
+}
+
+
+/* =========================================================
+   CTA BANNER — reusable full-bleed call to action
+   ========================================================= */
+
+.cta-banner {
+    width: 100%;
+    padding: 52px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #6d2bd9 100%);
+    background-size: 200% 200%;
+    animation: bsgBtnSheen 8s ease infinite;
+}
+
+.cta-banner .eyebrow { color: #f1e0ff; }
+
+.cta-banner h2 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.cta-banner p {
+    max-width: 600px;
+    margin: 0 auto 24px;
+    color: #f3e9ff;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.cta-banner .btn-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.cta-banner .btn-light,
+.cta-banner .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cta-banner .btn-light {
+    background: #fff;
+    color: #5a1fb8;
+    border: none;
+}
+
+.cta-banner .btn-light:hover { background: #f1e6ff; }
+
+.cta-banner .btn-outline {
+    background: transparent;
+    color: #fff;
+    border: 1.5px solid rgba(255,255,255,.75);
+}
+
+.cta-banner .btn-outline:hover { background: rgba(255,255,255,.15); }
+
+@media (prefers-reduced-motion: reduce) {
+    .cta-banner { animation: none; }
+}
+
+
+/* =========================================================
+   RESPONSIVE — new components
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .stats-grid, .stats-source,
+    .pillars-grid, .values-grid,
+    .myth-grid, .priority-list,
+    .founders-teaser-grid, .founders-teaser-cta,
+    .footer-main,
+    .impact-callout {
+        width: 92%;
+    }
+
+    #gnb > li > a {
+        font-size: 12.5px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .pillars-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 800px) {
+
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .values-grid { grid-template-columns: repeat(2, 1fr); }
+    .myth-grid { grid-template-columns: 1fr; }
+    .priority-list { grid-template-columns: 1fr; }
+    .founders-teaser-grid { grid-template-columns: 1fr; }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+        padding: 38px 0 18px;
+    }
+
+    .steps-list, .story-teaser { width: 92%; }
+    .story-teaser { padding: 28px 24px; }
+
+    .impact-callout { flex-direction: column; text-align: center; padding: 26px; }
+
+    .cta-banner h2 { font-size: 25px; }
+}
+
+@media (max-width: 600px) {
+
+    .stat-number { font-size: 30px; }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand .footer-logo { justify-content: center; }
+    .footer-brand p { margin-left: auto; margin-right: auto; }
+
+    .pillars-grid { grid-template-columns: 1fr; }
 }
