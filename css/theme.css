@@ -1,0 +1,103 @@
+/* =========================================================
+   BSG THEME — amethyst + cream
+   Purple leads (nav, cards, bands, footer); cream is the paper.
+   Loaded last on every page so it wins over style.css.
+   ========================================================= */
+:root{
+  --amethyst:#6d2bd9; --amethyst-deep:#4c1d95; --aubergine:#1d0d2d; --plum:#2a1450;
+  --violet:#b477ff; --lilac:#e8d5f7; --lilac-soft:#f1e6fb;
+  --cream:#ecdcb4; --cream-hi:#f5e9c9; --cream-deep:#dfca98; --ivory:#fbf5e6;
+  --gold:#b8923a; --ink:#241537;
+  --grain:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .42  0 0 0 0 .27  0 0 0 0 .6  0 0 0 .07 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  --serif:"Fraunces", Georgia, "Times New Roman", serif;
+}
+::selection{background:var(--amethyst);color:var(--ivory)}
+body{background:var(--cream) var(--grain);color:#3a2d4d}
+h1,h2,h3,h4{color:var(--ink)}
+.section-heading h2,.founders-heading h2,.cta-box h2,.page-hero h1,.faq-hero h1,.research-hero h1,
+.process-card h3,.pillar-card h3,.program-card h3,.research-card h3,.value-card h3,.team-card h3,.cofounder-card h3,
+.stat-number,.footer-logo span,.hero-name{font-family:var(--serif);letter-spacing:-.01em}
+.section-heading h2{font-weight:600;font-size:clamp(30px,3.4vw,44px);line-height:1.12;color:var(--aubergine)}
+.section-heading p{color:#5a4a70;line-height:1.75;max-width:62ch}
+
+/* eyebrow: quiet italic serif between gold hairlines */
+.section-heading .eyebrow,.eyebrow{font-family:var(--serif);font-style:italic;font-weight:500;text-transform:none;letter-spacing:.02em;font-size:17px;color:var(--amethyst)}
+.section-heading .eyebrow:before,.section-heading .eyebrow:after{background:linear-gradient(90deg,transparent,var(--gold));height:1px;width:64px}
+.section-heading .eyebrow:after{background:linear-gradient(270deg,transparent,var(--gold))}
+.section-heading h2:after{background:linear-gradient(90deg,transparent,var(--gold),transparent);width:120px;left:calc(50% - 60px)}
+
+/* ---------- header + nav ---------- */
+#header{background:var(--cream-hi)!important;box-shadow:0 1px 0 #e3d3a8,0 10px 30px -14px rgba(76,29,149,.35)}
+#header .logo-text{font-family:var(--serif);color:var(--aubergine);font-weight:700;letter-spacing:-.01em}
+#header .logo img{box-shadow:0 0 0 3px var(--cream-hi),0 0 0 4px var(--gold)}
+#nav{background:linear-gradient(180deg,var(--amethyst-deep),var(--plum))!important;border:0!important;border-bottom:2px solid var(--gold)!important}
+#gnb>li>a{color:#f1e6fb}
+#gnb>li>a:hover{color:#fff;background:rgba(255,255,255,.08)}
+#gnb>li.active>a,#gnb>li>a.active,#gnb>li.on>a{background:var(--cream-hi)!important;color:var(--amethyst-deep)!important;font-weight:700}
+#gnb .donate-btn,.donate-btn{background:linear-gradient(135deg,#8b4df0,#6d2bd9 55%,#5a1fb8)!important;color:#fff!important;border-radius:999px!important;box-shadow:0 6px 18px -6px rgba(109,43,217,.7),inset 0 0 0 1px rgba(255,255,255,.18)}
+.siteUtil a{border-radius:999px}
+.icon-link{border-radius:999px}
+
+/* hero seam: gold rule, no gap */
+.banner{border-bottom:3px solid var(--gold)}
+
+/* ---------- overview ---------- */
+.overview-section{background:var(--cream) var(--grain)!important;position:relative}
+.overview-section:before{content:"";position:absolute;inset:0 0 auto 0;height:260px;background:radial-gradient(60% 100% at 50% 0,rgba(109,43,217,.14),transparent 70%);pointer-events:none}
+.overview-section>*{position:relative}
+.resource-card{background:var(--cream-hi)!important;border:1px solid rgba(109,43,217,.22)!important;border-radius:22px!important;box-shadow:0 18px 40px -22px rgba(76,29,149,.55)!important;overflow:hidden;transition:transform .35s,box-shadow .35s}
+.resource-card:hover{transform:translateY(-6px)!important;box-shadow:0 26px 50px -20px rgba(76,29,149,.7)!important}
+.resource-icon{background:radial-gradient(120% 120% at 30% 15%,#8b4df0,var(--amethyst) 45%,var(--plum))!important;color:var(--ivory)!important;font-size:46px!important}
+.resource-card h3{background:var(--aubergine)!important;color:var(--ivory)!important;font-family:var(--serif);font-weight:600;border-top:2px solid var(--gold)}
+.resource-details{background:linear-gradient(160deg,var(--plum),var(--aubergine))!important}
+.resource-card:hover h3{border-top:0;color:var(--ivory)!important}
+.resource-hint{color:#e7cf93!important}
+
+/* ---------- impact band ---------- */
+.stats-band{background:radial-gradient(70% 90% at 50% 0,#5a1fb8 0,transparent 70%),linear-gradient(180deg,var(--plum),var(--aubergine))!important}
+.stat-card{background:rgba(251,245,230,.06)!important;border:1px solid rgba(231,207,147,.35)!important;border-radius:20px!important;backdrop-filter:blur(4px)}
+.stat-number{color:var(--ivory)!important;font-weight:600}
+.stats-band .section-heading h2{color:var(--ivory);background:none;-webkit-text-fill-color:currentColor}
+.stats-band .eyebrow{color:#e7cf93!important}
+
+/* ---------- approach: solid purple pills ---------- */
+.process-section{background:var(--cream) var(--grain)!important}
+.process-card{background:linear-gradient(95deg,var(--amethyst-deep),var(--amethyst) 70%,#8b4df0)!important;box-shadow:0 24px 44px -26px rgba(76,29,149,.9)!important}
+.process-card:nth-child(even){background:linear-gradient(265deg,var(--amethyst-deep),var(--amethyst) 70%,#8b4df0)!important}
+.process-card h3{color:var(--ivory)!important;font-weight:600;letter-spacing:.04em}
+.process-card p{color:#eadcff!important}
+.commitment-circle{background:var(--cream-hi)!important;border:10px solid rgba(251,245,230,.2)!important;color:var(--amethyst)!important;box-shadow:inset 0 0 0 2px var(--gold)}
+
+/* ---------- founders teaser ---------- */
+.founders-section{background:linear-gradient(180deg,var(--cream-hi),var(--cream))!important}
+.founder-mini{background:var(--cream-hi)!important;border:1px solid rgba(109,43,217,.2)!important;border-radius:22px!important;box-shadow:0 16px 36px -22px rgba(76,29,149,.6)!important}
+.founder-mini img{border:3px solid var(--amethyst)!important}
+.founders-heading h2{color:var(--aubergine)}
+
+/* ---------- shared inner-page components ---------- */
+.pillar-card,.program-card,.research-card,.value-card,.team-card,.voice-card,.cofounder-card,.faq-item,.myth-card,.step-item,.priority-item,.impact-item,.story-teaser,.cta-box,.fact{
+  background:var(--cream-hi)!important;border:1px solid rgba(109,43,217,.2)!important;border-top:3px solid var(--amethyst)!important;border-radius:18px!important;box-shadow:0 16px 34px -24px rgba(76,29,149,.6)!important}
+.pillar-num,.program-icon{background:linear-gradient(135deg,#8b4df0,var(--amethyst-deep))!important;color:var(--ivory)!important;border-radius:12px}
+.impact-callout{background:linear-gradient(120deg,var(--plum),var(--amethyst-deep))!important;border-radius:18px!important;border:1px solid rgba(231,207,147,.4)}
+.btn,.btn-light,.btn-outline,.founders-teaser-cta a,.donate-pay-btn,.btn-row a,a.btn{border-radius:999px!important}
+.back-link{color:var(--amethyst-deep)}
+.tag{border-radius:999px}
+section[style*="background"]{background-image:var(--grain)}
+
+/* ---------- ticker + footer: deep purple ---------- */
+.footer-marquee{background:linear-gradient(90deg,var(--amethyst-deep),var(--amethyst),var(--amethyst-deep))!important;border-top:2px solid var(--gold);border-bottom:1px solid rgba(231,207,147,.4)}
+.footer-marquee__track span{font-family:var(--serif);font-style:italic;font-weight:500;text-transform:none;letter-spacing:.03em;color:var(--ivory)}
+.footer-marquee__track .dot{color:#e7cf93}
+#footer{background:linear-gradient(180deg,var(--plum),var(--aubergine))!important;color:#d9c9ee}
+.footer-logo span{color:var(--ivory)!important}
+.footer-brand p,.footer-col li,.footer-col li a,.footer-bottom,.footer-bottom p,.footer-bottom a{color:#cdbbe6!important}
+.footer-col h4{color:#e7cf93!important;font-family:var(--serif);font-style:italic;font-weight:500;text-transform:none;letter-spacing:.02em;font-size:16px}
+.footer-col li a:hover,.footer-bottom a:hover{color:#fff!important}
+.footer-col a.donate-link{color:var(--ivory)!important;font-weight:700}
+.footer-bottom{border-top:1px solid rgba(231,207,147,.25)!important}
+.footer-bottom strong{color:var(--ivory)}
+
+/* polish */
+#footer .donate-btn,#footer a.donate-link{background:none!important;box-shadow:none!important;padding:0!important;border-radius:0!important;color:#e7cf93!important;font-size:inherit!important;text-transform:none;letter-spacing:0}
+.siteUtil .icon-link:first-child,.siteUtil a:not(.donate-btn){background:var(--aubergine)!important;border:1px solid var(--gold)!important;color:var(--ivory)!important}
+.siteUtil .icon-link{color:var(--ivory)}

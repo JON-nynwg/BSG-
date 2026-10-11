@@ -28,7 +28,7 @@ body {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     font-weight: 400;
     color: #222;
-    background: #f3e7cc;
+    background: #ecdcb4;
 }
 
 body, ul, ol, dl, dt, dd, p, button, figure, h1, h2, h3, h4, h5, h6, div {
@@ -423,7 +423,7 @@ strong {
    ========================================================= */
 
 .overview-section {
-    background: #f3e7cc;
+    background: #ecdcb4;
     overflow: hidden; /* contain the card glow so it never causes horizontal scroll */
 }
 
@@ -454,7 +454,7 @@ strong {
     padding: 34px 26px 30px;
     border: none;
     border-radius: 18px;
-    background: linear-gradient(165deg, #f9f1dd 0%, #f9f1dd 100%);
+    background: linear-gradient(165deg, #f5e9c9 0%, #f5e9c9 100%);
     color: inherit;
     z-index: 1;
     transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease;
@@ -531,7 +531,7 @@ a.resource-card:hover::after {
 .back-link:hover { color: #4e1ca5; }
 
 .page-hero {
-    background: #f3e7cc;
+    background: #ecdcb4;
     padding: 45px 0;
 }
 
@@ -547,7 +547,7 @@ a.resource-card:hover::after {
     min-height: 145px;
     padding: 25px 22px;
     border-right: 1px solid #ddd;
-    background: #f9f1dd;
+    background: #f5e9c9;
 }
 
 .impact-item:last-child { border-right: 0; }
@@ -577,7 +577,7 @@ a.resource-card:hover::after {
 .program-card {
     padding: 24px 20px;
     border: 1px solid #ddd;
-    background: #f9f1dd;
+    background: #f5e9c9;
 }
 
 .program-icon {
@@ -617,7 +617,7 @@ a.resource-card:hover::after {
     width: 700px;
     margin: 0 auto;
     border: 1px solid #ddd;
-    background: #f3e7cc;
+    background: #ecdcb4;
 }
 
 .focus-list li {
@@ -681,7 +681,7 @@ a.resource-card:hover::after {
     gap: 30px;
     border: 1px solid #ddd;
     border-left: 4px solid #6d2bd9;
-    background: #f9f1dd;
+    background: #f5e9c9;
 }
 
 .voice-photo {
@@ -722,7 +722,7 @@ a.resource-card:hover::after {
     padding: 35px 40px;
     text-align: center;
     border: 1px solid #ddd;
-    background: #f3e7cc;
+    background: #ecdcb4;
 }
 
 .cta-box .eyebrow {
@@ -784,7 +784,7 @@ a.resource-card:hover::after {
 }
 
 .faq-section {
-    background: #f9f1dd;
+    background: #f5e9c9;
     padding: 45px 0;
 }
 
@@ -849,7 +849,7 @@ a.resource-card:hover::after {
    ========================================================= */
 
 .founders-section {
-    background: #f9f1dd;
+    background: #f5e9c9;
     overflow: hidden; /* contain hover glow, avoid horizontal scroll */
 }
 
@@ -880,7 +880,7 @@ a.resource-card:hover::after {
     isolation: isolate;
     overflow: hidden;
     border-radius: 16px;
-    background: #f9f1dd;
+    background: #f5e9c9;
     box-shadow: 0 8px 24px -14px rgba(36, 21, 55, .35);
     transition: transform .4s cubic-bezier(.2,.8,.2,1), box-shadow .4s ease;
 }
@@ -968,7 +968,7 @@ a.resource-card:hover::after {
     margin: 0;
     padding: 16px 18px 14px 44px;
     border-radius: 12px;
-    background: #f3e7cc;
+    background: #ecdcb4;
     color: #3c2a52;
     font-size: 14px;
     font-style: italic;
@@ -995,7 +995,7 @@ a.resource-card:hover::after {
 
 #footer {
     text-align: center;
-    background: #f3e7cc;
+    background: #ecdcb4;
     overflow: hidden;
 }
 
@@ -1508,7 +1508,7 @@ a.resource-card:hover::after {
 
 .pillar-card {
     padding: 28px 22px;
-    background: #f9f1dd;
+    background: #f5e9c9;
     border-radius: 16px;
     border: 1px solid #eee2fb;
     box-shadow: 0 10px 30px -20px rgba(75, 20, 150, .45);
@@ -1560,7 +1560,7 @@ a.resource-card:hover::after {
     padding: 24px 18px;
     text-align: center;
     border: 1px solid #ddd;
-    background: #f9f1dd;
+    background: #f5e9c9;
 }
 
 .value-card i {
@@ -1594,7 +1594,7 @@ a.resource-card:hover::after {
     margin: 0 auto;
     padding: 36px 44px;
     text-align: center;
-    background: #f3e7cc;
+    background: #ecdcb4;
     border: 1px solid #e6d9fb;
     border-radius: 18px;
 }
@@ -1623,7 +1623,7 @@ a.resource-card:hover::after {
 .myth-card {
     padding: 22px 24px;
     border-radius: 14px;
-    background: #f9f1dd;
+    background: #f5e9c9;
     border: 1px solid #eee;
     box-shadow: 0 8px 22px -18px rgba(75, 20, 150, .4);
 }
@@ -1670,7 +1670,7 @@ a.resource-card:hover::after {
     position: relative;
     margin-bottom: 14px;
     padding: 18px 22px 18px 66px;
-    background: #f9f1dd;
+    background: #f5e9c9;
     border: 1px solid #eee;
     border-radius: 12px;
     box-shadow: 0 6px 18px -16px rgba(75, 20, 150, .4);
@@ -1731,7 +1731,7 @@ a.resource-card:hover::after {
     align-items: center;
     gap: 18px;
     padding: 18px;
-    background: #f9f1dd;
+    background: #f5e9c9;
     border-radius: 14px;
     border: 1px solid #eee2fb;
     box-shadow: 0 8px 22px -18px rgba(75, 20, 150, .4);
@@ -1862,7 +1862,7 @@ a.resource-card:hover::after {
 }
 
 .cta-banner .btn-light {
-    background: #f9f1dd;
+    background: #f5e9c9;
     color: #5a1fb8;
     border: none;
 }
@@ -1976,14 +1976,14 @@ a.resource-card:hover::after {
 .back-top:hover { background: #6d2bd9; }
 
 /* Process steps (home) */
-.process-section { background: #f3e7cc; }
+.process-section { background: #ecdcb4; }
 .process-grid {
     width: 1080px; max-width: 92%; margin: 10px auto 0;
     display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;
     counter-reset: step;
 }
 .process-card {
-    position: relative; padding: 34px 26px 28px; background: #f9f1dd;
+    position: relative; padding: 34px 26px 28px; background: #f5e9c9;
     border-radius: 16px; border-top: 4px solid #6d2bd9;
     box-shadow: 0 8px 24px -16px rgba(36,21,55,.35);
 }
@@ -2002,7 +2002,7 @@ a.resource-card:hover::after {
     display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;
 }
 .cofounder-card {
-    display: flex; gap: 22px; padding: 26px; background: #f9f1dd;
+    display: flex; gap: 22px; padding: 26px; background: #f5e9c9;
     border-radius: 16px; border: 1px solid #e8dff5;
     box-shadow: 0 8px 24px -16px rgba(36,21,55,.35);
     transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease;
@@ -2021,7 +2021,7 @@ a.resource-card:hover::after {
 .cofounder-body p { margin: 0 0 14px; color: #555; font-size: 14.5px; line-height: 1.6; }
 .cofounder-tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
 .cofounder-tags li { padding: 4px 12px; border-radius: 999px; background: #3b3b44; color: #fff; font-size: 12px; font-weight: 600; }
-.cofounder-card.is-open-slot { border-style: dashed; background: #f9f1dd; }
+.cofounder-card.is-open-slot { border-style: dashed; background: #f5e9c9; }
 .cofounder-card.is-open-slot .cofounder-avatar { background: #3b3b44; }
 
 @media (max-width: 900px) {
@@ -2108,7 +2108,7 @@ a.resource-card:hover::after {
     position: absolute;
     left: 0; right: 0; bottom: 0;
     height: 92px;
-    background: linear-gradient(#0b0f17 0%, #35323f 30%, #bbb7c3 70%, #f3e7cc 100%);
+    background: linear-gradient(#0b0f17 0%, #35323f 30%, #bbb7c3 70%, #ecdcb4 100%);
     pointer-events: none;
 }
 .home-page .hero-name { font-size: 3.05cqw; }
