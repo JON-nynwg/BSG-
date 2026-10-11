@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/donate.css">
+<link rel="stylesheet" href="css/bridal-layout.css">
 </head>
 
 <body>
@@ -30,7 +31,8 @@
                 <li><a href="#" class="donate-btn">Donate</a></li>
             </ul>
         </div>
-        <nav id="nav">
+        <button type="button" class="bsg-menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav">
             <div class="ly_inner">
                 <ul id="gnb">
                     <li><a href="index.html#home">Home</a></li>
@@ -40,6 +42,7 @@
                     <li class="active"><a href="research.html">Research</a></li>
                     <li><a href="community.html">Community</a></li>
                     <li><a href="founders.html">Founders</a></li>
+                    <li><a href="cofounders.html">Co-Founders</a></li>
                     <li><a href="#" class="donate-btn">Support</a></li>
                 </ul>
             </div>
@@ -128,7 +131,7 @@
         </section>
 
         <!-- GLOBAL COLLABORATION -->
-        <section class="section" style="background:#fff;">
+        <section class="section" style="background:#f3e7cc;">
             <div class="section-heading">
                 <span class="eyebrow">THE BIGGER PICTURE</span>
                 <h2>Working within a global framework.</h2>
@@ -141,16 +144,6 @@
         </div>
 
     </main>
-
-    <section class="cta-banner">
-        <span class="eyebrow">COLLABORATE WITH US</span>
-        <h2>Are you a researcher or clinician?</h2>
-        <p>We're always open to partnerships that bring evidence-based care closer to the communities that need it most.</p>
-        <div class="btn-row">
-            <a href="mailto:info@beyondseizureglobal.org" class="btn-light">Reach Out</a>
-            <a href="#" class="donate-btn btn-outline">Support Our Work</a>
-        </div>
-    </section>
 
     <footer id="footer">
         <div class="footer-marquee" aria-hidden="true">
@@ -192,6 +185,7 @@
                 <ul>
                     <li><a href="community.html">FAQs &amp; Voices</a></li>
                     <li><a href="founders.html">Our Founders</a></li>
+                    <li><a href="cofounders.html">Our Co-Founders</a></li>
                     <li><a href="index.html#footer">Contact Us</a></li>
                     <li><a href="#" class="donate-btn donate-link">Donate</a></li>
                 </ul>
@@ -270,8 +264,9 @@
 </div>
 
 <script src="https://unpkg.com/intasend-inlinejs-sdk@4.0.4/build/intasend-inline.js"></script>
-<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+<script src="js/donate-config.js"></script>
 <script src="js/donate.js"></script>
+<script src="js/site.js"></script>
 
 </body>
 </html>

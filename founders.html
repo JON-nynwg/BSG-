@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/donate.css">
+<link rel="stylesheet" href="css/bridal-layout.css">
 </head>
 
 <body>
@@ -30,7 +31,8 @@
                 <li><a href="#" class="donate-btn">Donate</a></li>
             </ul>
         </div>
-        <nav id="nav">
+        <button type="button" class="bsg-menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav">
             <div class="ly_inner">
                 <ul id="gnb">
                     <li><a href="index.html#home">Home</a></li>
@@ -40,6 +42,7 @@
                     <li><a href="research.html">Research</a></li>
                     <li><a href="community.html">Community</a></li>
                     <li class="active"><a href="founders.html">Founders</a></li>
+                    <li><a href="cofounders.html">Co-Founders</a></li>
                     <li><a href="#" class="donate-btn">Support</a></li>
                 </ul>
             </div>
@@ -91,12 +94,12 @@
         </section>
 
         <!-- WHY WE STARTED -->
-        <section class="section" style="background:#f7f3fb;">
+        <section class="section" style="background:#f3e7cc;">
             <div class="section-heading">
                 <span class="eyebrow">WHY BSG EXISTS</span>
                 <h2>Awareness first. Everything else follows.</h2>
             </div>
-            <div class="story-teaser" style="background:#fff;">
+            <div class="story-teaser" style="background:#f3e7cc;">
                 <p>John and Lilian saw the same pattern from two different vantage points &mdash; one from community outreach, one from research and policy: silence around epilepsy holds people back as much as seizures themselves. When people can't speak openly about their condition, they struggle to get support, and the research and funding that could change their lives struggles to follow. Beyond Seizure Global exists to break that silence &mdash; pairing grassroots awareness with evidence-based programs so that education, empowerment and dignity reach people wherever epilepsy has kept them isolated.</p>
                 <a class="btn" href="mission.html">Read Our Full Mission</a>
             </div>
@@ -107,17 +110,6 @@
         </div>
 
     </main>
-
-    <!-- CTA -->
-    <section class="cta-banner">
-        <span class="eyebrow">WORK WITH US</span>
-        <h2>Want to support the founders' vision?</h2>
-        <p>Partner with BSG, volunteer your time, or make a donation that funds awareness campaigns and community programs.</p>
-        <div class="btn-row">
-            <a href="#" class="donate-btn btn-light">Donate Now</a>
-            <a href="mailto:info@beyondseizureglobal.org" class="btn-outline">Get In Touch</a>
-        </div>
-    </section>
 
     <footer id="footer">
         <div class="footer-marquee" aria-hidden="true">
@@ -159,6 +151,7 @@
                 <ul>
                     <li><a href="community.html">FAQs &amp; Voices</a></li>
                     <li><a href="founders.html">Our Founders</a></li>
+                    <li><a href="cofounders.html">Our Co-Founders</a></li>
                     <li><a href="index.html#footer">Contact Us</a></li>
                     <li><a href="#" class="donate-btn donate-link">Donate</a></li>
                 </ul>
@@ -237,8 +230,9 @@
 </div>
 
 <script src="https://unpkg.com/intasend-inlinejs-sdk@4.0.4/build/intasend-inline.js"></script>
-<script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+<script src="js/donate-config.js"></script>
 <script src="js/donate.js"></script>
+<script src="js/site.js"></script>
 
 </body>
 </html>

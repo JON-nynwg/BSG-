@@ -14,7 +14,7 @@
 .donate-modal-overlay.open { display: flex; }
 
 .donate-modal {
-    background: #ffffff;
+    background: #f9f1dd;
     border-radius: 14px;
     width: 100%;
     max-width: 420px;
@@ -78,14 +78,14 @@
     flex: 1;
     padding: 10px 0;
     border: 1px solid #e2e2e2;
-    background: white;
+    background: #f9f1dd;
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
 }
 .donate-amount-row button.selected {
     border-color: #6d2bd9;
-    background: #f3ecff;
+    background: #f3e7cc;
     color: #4e1ca5;
     font-weight: 600;
 }
@@ -116,7 +116,7 @@
 .donate-pay-btn:hover { background: #4e1ca5; }
 
 .donate-bank-details {
-    background: #f5f5f5;
+    background: #f9f1dd;
     border-radius: 8px;
     padding: 14px 16px;
     font-size: 14px;
@@ -129,3 +129,11 @@
     color: #777;
     margin-top: 10px;
 }
+
+.donate-bank-details > div { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.donate-bank-details b { min-width: 110px; }
+.donate-mono { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; word-break: break-all; flex: 1 1 160px; }
+.donate-copy { margin-left: auto; padding: 4px 12px; border: 1px solid #6d2bd9; border-radius: 6px; background: #f9f1dd; color: #4e1ca5; font-size: 12px; font-weight: 600; cursor: pointer; }
+.donate-copy:hover { background: #6d2bd9; color: #fff; }
+a.donate-pay-btn { display: block; text-align: center; text-decoration: none; }
+#paypal-custom-amount { width: 100%; }
