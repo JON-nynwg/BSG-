@@ -30,7 +30,7 @@
 
   /* ---------- reveal animation (staggered) ---------- */
   root.classList.add('js-fx');
-  var revealSel = '.program-card,.pillar-card,.value-card,.impact-item,.step-item,.myth-card,.research-card,.priority-item,.team-card:not(.reveal),.cofounder-card:not(.reveal),.story-teaser:not(.reveal),.fx-timeline li,.fx-aid-step,.fx-dash-card,.fx-facts div,.fx-aid-alert,.fx-reach>*,.fx-band-inner,.fx-news,.fx-cta-inner>div:first-child,.fx-tabs,.faq-item:not(.reveal),.voice-card,.cta-box,.impact-callout';
+  var revealSel = '.program-card,.pillar-card,.value-card,.impact-item,.step-item,.myth-card,.research-card,.priority-item,.team-card:not(.reveal),.cofounder-card:not(.reveal),.story-teaser:not(.reveal),.fx-timeline li,.fx-aid-step,.fx-dash-card,.fx-facts div,.fx-aid-alert,.fx-reach>*,.fx-band-inner,.fx-news,.fx-cta-inner>div:first-child,.fx-tabs,.faq-item:not(.reveal),.voice-card,.cta-box,.impact-callout,.cf-card,.cf-cover-item,.cf-glance';
   var fxEls = $$(revealSel);
   fxEls.forEach(function (el) {
     el.classList.add('fx');
@@ -186,6 +186,27 @@
         secs.forEach(function (s) { so.observe(s); });
       }
     }
+  }
+
+  /* ---------- co-founders: one card, pick a person ---------- */
+  var people = $$('.cf-person');
+  if (people.length) {
+    var panelsCF = $$('.cf-panel');
+    var showCF = function (i, focus) {
+      people.forEach(function (p, k) {
+        var on = k === i; p.setAttribute('aria-selected', String(on)); p.tabIndex = on ? 0 : -1;
+        if (panelsCF[k]) panelsCF[k].classList.toggle('on', on);
+      });
+      if (focus) people[i].focus();
+    };
+    people.forEach(function (p, i) {
+      p.addEventListener('click', function () { showCF(i); });
+      p.addEventListener('keydown', function (e) {
+        var k = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!k) return;
+        e.preventDefault(); showCF((i + k + people.length) % people.length, true);
+      });
+    });
+    showCF(0);
   }
 
   /* ---------- closing call-to-action + newsletter-style block ---------- */
